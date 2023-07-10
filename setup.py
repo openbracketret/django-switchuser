@@ -14,7 +14,7 @@ try:
 except IOError:
     long_description = "https://github.com/wolever/django-switchuser"
 
-version = django_switchuser.version_str
+version = "0.6.1"
 
 setup(
     name="django-switchuser",
