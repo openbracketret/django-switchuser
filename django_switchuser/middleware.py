@@ -18,8 +18,5 @@ class SuStateMiddleware(MiddlewareMixin):
             request.su_state = self.su_state_class(request)
         except AttributeError as e:
             if not hasattr(request, "user"):
-                raise AttributeError(
-                    str(e) + " (NOTE: django_switchuser must be **after** "
-                    "django.contrib.auth.middleware.AuthenticationMiddleware!)"
-                )
+                raise AttributeError(str(e) + " (NOTE: django_switchuser must be **after** ")
             raise
