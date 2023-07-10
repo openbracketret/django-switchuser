@@ -21,5 +21,5 @@ class SuStateMiddleware(MiddlewareMixin):
                 raise AttributeError(
                     str(e) + " (NOTE: django_switchuser must be **after** "
                     "django.contrib.auth.middleware.AuthenticationMiddleware!)"
-                ), None, sys.exc_info()[2]
+                )
             raise
