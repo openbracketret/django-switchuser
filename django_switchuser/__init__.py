@@ -2,6 +2,6 @@
 #     ver = map(str, ver)
 #     return ".".join(ver[:3]) + "".join(ver[3:])
 
-# __version__ = (0, 6, 1)
+ __version__ = (0, 6, 3)
 
-# version_str = version2str(__version__)
+ version_str = "0.6.3"
